@@ -58,16 +58,16 @@ async def autohentai_parser():
                 url3, file3),
                            shell=True)
             hentai.insert_one({"url": url})
-            await app.send_video(-1001658064061,
-                                 CHANNEL_ID,
+            await app.send_video(CHANNEL_ID,
+                                 file1,
                                  thumb=f'{image}',
                                  caption=f'[{CHANNEL_USERNAME}] {name} - 720p')
-            await app.send_video(-1001658064061,
-                                 CHANNEL_ID,
+            await app.send_video(CHANNEL_ID,
+                                 file2,
                                  thumb=f'{image}',
                                  caption=f'[{CHANNEL_USERNAME}] {name} - 480p')
-            await app.send_video(-1001658064061,
-                                 CHANNEL_ID,
+            await app.send_video(CHANNEL_ID,
+                                 file3,
                                  thumb=f'{image}',
                                  caption=f'[{CHANNEL_USERNAME}] {name} - 360p')
             os.remove(file1)
@@ -94,16 +94,16 @@ async def autohentai_parser():
                 url3, file3),
                            shell=True)
             hentai.insert_one({"url": url})
-            await app.send_video(-1001658064061,
-                                 CHANNEL_ID,
+            await app.send_video(CHANNEL_ID,
+                                 file1,
                                  thumb=f'{image}',
                                  caption=f'[{CHANNEL_USERNAME}] {name} - 720p')
-            await app.send_video(-1001658064061,
-                                 CHANNEL_ID,
+            await app.send_video(CHANNEL_ID,
+                                 file2,
                                  thumb=f'{image}',
                                  caption=f'[{CHANNEL_USERNAME}] {name} - 480p')
-            await app.send_video(-1001658064061,
-                                 CHANNEL_ID,
+            await app.send_video(CHANNEL_ID,
+                                 file3,
                                  thumb=f'{image}',
                                  caption=f'[{CHANNEL_USERNAME}] {name} - 360p')
             os.remove(file1)
