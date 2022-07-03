@@ -1,0 +1,7 @@
+pyrogram==1.4.16
+requests
+ffmpeg
+apscheduler
+pymongo
+tgcrypto==1.2.2
+dnspython
