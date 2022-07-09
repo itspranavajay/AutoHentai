@@ -12,7 +12,7 @@ API_ID = os.environ.get("API_ID", None)
 MONGO_URL = os.environ.get("MONGO_URL", None) 
 API_HASH = os.environ.get("API_HASH", None) 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
-CHANNEL_ID = os.environ.get("CHANNEL_ID", None) 
+CHANNEL_ID = os.environ.get(int("CHANNEL_ID"))
 CHANNEL_USERNAME = os.environ.get("CHANNEL_USERNAME", None) 
 
 app = Client(
